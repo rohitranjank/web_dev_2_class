@@ -45,7 +45,7 @@
 // }
 // getData()
 
-async function fetchData(){
+async function fetchData(city){
     try{
         const API_key ="7f45d9f973f4a7b3581f9dcdf2f238bb";
         const response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}&units=metric`);
